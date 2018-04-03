@@ -1,0 +1,11 @@
+<?php
+/*$proxy_list=array();
+$proxy_list[0]='http://95-31-19-43.broadband.corbina.ru:8080';
+$proxy_list[1]='http://gwgdeer.dhakafiber.net:8080';
+$proxy_list[2]='http://corp-190-12-50-177-cue.puntonet.ec:8081';
+$proxy_list[3]='http://217-170-102-7.internetbox.cz:8080';
+$proxy_list[4]='http://hdjnt1.lintasarta.co.id:8080';*/
+include('getinfo.php');
+$sum=json_decode(getproxylist(1,1),true);
+$proxy_list=$sum['data'];
+?>
